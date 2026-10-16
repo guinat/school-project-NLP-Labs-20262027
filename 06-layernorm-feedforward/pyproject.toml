@@ -1,0 +1,18 @@
+[project]
+name = "layernorm-feedforward"
+version = "0.1.0"
+description = "LayerNorm, feed-forward network and residual connection of a Transformer block."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "numpy>=2.5.3",
+    "torch>=2.14.0",
+]
+
+[tool.uv.sources]
+torch = { index = "pytorch-cpu" }
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true

@@ -1,0 +1,18 @@
+[project]
+name = "gpt-from-scratch"
+version = "0.1.0"
+description = "A small character-level GPT trained on Tiny Shakespeare."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "matplotlib>=3.11.2",
+    "torch>=2.14.0",
+]
+
+[tool.uv.sources]
+torch = { index = "pytorch-cpu" }
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
